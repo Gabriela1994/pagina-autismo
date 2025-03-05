@@ -1,0 +1,303 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:right;
+    background-color: #03346E;
+}
+
+nav .logo{
+    width: 100px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-flex;
+    padding-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f9fadc;
+    font-size: 2.5vh;
+    color: wheat;
+    padding-left: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.rowdies-bold {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.contenedor-header {
+    width: 100%;
+    display: flex;
+}
+
+.box1 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #83B4FF;
+}
+
+.imagen {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 900px;
+    grid-gap: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.box3 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box3 h1 {
+    font-size: 80px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    color: #03346E;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.box3 h2 {
+    font-size: 30px;
+    margin-top: 0%;
+    padding-top: 0%;
+    color: #3468C0;
+    font-family: "Poppins", sans-serif;
+    font-weight:600;
+}
+
+.box3 p {
+    font-size: 3vh;
+    margin-top: 0%;
+    padding-top: 0%;
+    color: #021526;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+
+.contenedor-header .box3 img {
+    width: 400px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+
+.contenedor-primario{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap:200px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.card {
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px 0 #ffffff);
+    width: 320px;
+    height: 180px;
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+    background: #021526;
+    height: 220px;
+    width: 25px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+
+.card:hover::before {
+    transition-delay: 0.2s;
+    transform: scale(40);
+}
+
+.card:hover {
+    color: #ffffff;
+}
+
+.card p {
+    padding: 10px 0;
+}
+
+.contenedor-secundario{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.box4 {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+.contenedor-secundario .box4 img {
+    width: 90%;
+}
+
+.box5 {
+    display: flex;
+    width: 70%;
+    margin-left: 10%;
+    flex-direction: column;
+}
+
+.box5 img {
+    width: 100%;
+}
+
+.box4 h1 {
+    font-size: 60px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    color: #03346E;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.box4 h2 {
+    font-size: 30px;
+    margin-top: 0%;
+    padding-top: 0%;
+    color: #83B4FF;
+    font-family: "DM Serif Text", serif;
+    font-weight: 800;
+}
+
+.box4 p {
+    font-size: 20px;
+    margin-top: 0%;
+    padding-top: 0%;
+    color: #021526;
+    font-family: "DM Serif Text", serif;
+}
+.box5 h1 {
+    font-size: 60px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    color: #03346E;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.box5 h2 {
+    font-size: 30px;
+    margin-top: 0%;
+    padding-top: 0%;
+    color: #83B4FF;
+    font-family: "DM Serif Text", serif;
+    font-weight: 800;
+}
+
+.box5 p {
+    font-size: 20px;
+    margin-top: 0%;
+    padding-top: 0%;
+    color: #021526;
+    font-family: "DM Serif Text", serif;
+}
+
+.contenedor-footer{
+    width: 100%;
+    display: flex;
+    background-color: #03346E;
+    color:#83B4FF;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .contenedor-footer h4 {
+        font-size: 3vw;
+    }
+}
+    
+    @media (max-width: 1200px) {
+        .imagen {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .box3 h1 {
+        font-size: 6vw;
+    }
+
+    .box3 h2 {
+        font-size: 2.5vw;
+    }
+
+    .box3 p {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .box1 {
+        height: auto;
+    }
+
+    .contenedor-primario {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .box4 h1, .box5 h1 {
+        font-size: 5vw;
+    }
+
+    .box4 h2, .box5 h2 {
+        font-size: 3vw;
+    }
+
+    .box4 p, .box5 p {
+        font-size: 2vw;
+    }
+}
